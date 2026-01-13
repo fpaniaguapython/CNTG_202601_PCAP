@@ -28,3 +28,14 @@ print(numero_frutas_verano) # 3
 print(frutas_invierno)
 frutas_comunes = frutas_invierno.intersection(frutas_verano)
 print(frutas_comunes) # {Manzana}
+
+# Diccionario
+diccionario =  {
+    "Jacobo":("Jacobo León","Renault Clio"),
+    "Israel":("Isreal de los Reyes","Seat 600")
+    }
+
+print(diccionario['Israel'])# Acceso al elemento
+print(tuple(diccionario.values()))# Conversión de los valores
+iago = diccionario.get('Iago',('No encontrado','Sin coche'))
+print(iago)
