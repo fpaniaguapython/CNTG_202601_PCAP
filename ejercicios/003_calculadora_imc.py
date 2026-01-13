@@ -1,4 +1,7 @@
-def calcular_imc(altura : float, peso : int):
+LIMITE_PESO_BAJO = 18.5
+LIMITE_PESO_MEDIO = 25
+
+def calcular_imc(altura : float, peso : int) -> float:
     imc = peso / (altura**2)
     return imc
 
@@ -7,9 +10,9 @@ altura = float(input('Altura (metros):'))
 
 imc = calcular_imc(altura, peso)
 print('IMC:',imc)
-if (imc<18.5):
+if (imc<LIMITE_PESO_BAJO):
     print('BAJO')
-elif (imc<25):
+elif (imc<LIMITE_PESO_MEDIO):
     print('OK')
 else:
     print('SOBREPESO')
