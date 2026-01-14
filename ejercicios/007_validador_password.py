@@ -12,7 +12,7 @@ fichero.write(resumen)
 fichero.close()
 # Solicitar password de verificación
 password_acceso = input('Introduce password:')
-# Obtener resumen
+# Generar resumen
 generador_resumen_2 = hashlib.sha256() 
 bytes = password_acceso.encode('utf-8')
 generador_resumen_2.update(bytes)
