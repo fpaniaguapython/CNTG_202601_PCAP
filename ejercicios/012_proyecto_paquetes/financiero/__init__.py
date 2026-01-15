@@ -1,0 +1,1 @@
+print('Ejecutando __init__ de financiero')
