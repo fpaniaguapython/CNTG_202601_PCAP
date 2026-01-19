@@ -5,6 +5,6 @@ import calculadora # Importamos todo
 # from calculadora import sumar as sm
 import math
 
-calculadora.sumar()
+print(calculadora.sumar(numero_1=10, numero_2=20))
 
-math.ceil()
+print(math.ceil(38.5))
